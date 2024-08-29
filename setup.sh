@@ -7,3 +7,4 @@ pip install llama-toolchain
 pip install setuptools
 llama download --source meta --model-id Meta-Llama3.1-8B-Instruct
 pip install torch fairscale fire blobfile
+python -c "import torch; print([(i, torch.cuda.get_device_properties(i)) for i in range(torch.cuda.device_count())]);"
