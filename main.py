@@ -44,7 +44,7 @@ def run_main(
 
     `max_gen_len` is optional because finetuned models are able to stop generations naturally.
     """
-    tokenizer_path = str(THIS_DIR.parent / "llama3/api/tokenizer.model")
+    tokenizer_path = str("/home/ubuntu/redteam-ai/models/llama3/api/tokenizer.model")
     generator = Llama.build(
         ckpt_dir=ckpt_dir,
         tokenizer_path=tokenizer_path,
